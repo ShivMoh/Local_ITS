@@ -1,0 +1,16 @@
+
+<div class="pdf">
+  <app-pdf-reader
+    [relevantPages]="this.metaData"
+    (promptEmitter)="emitPrompt($event)"
+  ></app-pdf-reader>
+</div>
+
+<!--
+<div class="main-container">
+  <div *ngIf="this.fileType == 'pdf'">
+  </div>
+  <div *ngIf="this.fileType == 'img'">
+    <img src="" alt="">
+  </div>
+</div>-->

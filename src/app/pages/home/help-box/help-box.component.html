@@ -1,0 +1,35 @@
+<div class="help-box">
+  <button
+    (click)="requestRileyHelp()"
+    class="default-button"
+    *ngIf="!answered"
+  >Request Help</button>
+
+  <!-- <div class="message-container" *ngIf="this.answered">
+    <div class="chat-message">
+        {{this.content}}
+    </div>
+
+    <div class="button-container">
+      <mat-icon class="help" matTooltip="Request new help">help</mat-icon>
+      <mat-icon class="refresh" matTooltip="Regenerate this response">refresh</mat-icon>
+    </div>
+  </div> -->
+
+</div>
+
+<!-- Popout -->
+<div  class="popup-backdrop" *ngIf="this.answered">
+  <div class="popup">
+    <div class="content-container">
+      <h1>Teacher</h1>
+      <p>{{this.content.length <= 0 ? "Teacher is thinking..." : this.content }}</p>  
+    </div>
+
+    <div class="buttons-container">
+      <button class="close" (click)="closeRileyHint()">Close</button>
+      <button class="help" *ngIf="this.requestingHelp" (click)="requestRileyHelp()">Help me again</button>
+    </div>
+  </div>
+</div>
+

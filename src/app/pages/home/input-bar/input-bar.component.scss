@@ -1,0 +1,33 @@
+options-container {
+  display: relative;
+
+  button {
+
+  }
+}
+
+
+.input-box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 85% 15%;
+  grid-template-rows: auto;
+  input {
+    height: 50px;
+    border: none;
+    background-color: #eeeeee;
+    padding: 10px;
+    margin: 5px;
+    border-bottom: solid #6ac4fe 4px;
+  }
+
+  button {
+    border: none;
+    background-color: #6ac4fe;
+    margin: 5px;
+    border-radius: 5px;
+  }
+}
+
+

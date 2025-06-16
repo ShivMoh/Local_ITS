@@ -1,0 +1,76 @@
+<div class="main-container">
+  <div class="update-button-container" *ngIf="updatesReady">
+    <button (click)="this.update()">Update Now!</button>
+  </div>
+  <div class="top">
+    <div class="area-1">
+      <app-display-box
+        [fileType] = "'pdf'"
+        [relevantDocuments]="this.context"
+        (promptEmitter)="requestDocuments($event)"
+        ></app-display-box>
+    </div>
+    <div class="area-2">
+      <app-chat-box
+        [content]="this.content"
+        [incomingMessage]="this.newMessageIncoming"
+        [newMessages]="this.messages"
+      ></app-chat-box>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="area-1">
+      <div class="input">
+        <app-input-bar (promptEmitter)="this.send($event)"></app-input-bar>
+      </div>
+    </div>
+    <div class="area-2">
+      <app-help-box
+        (messageEmitter)="this.requestHelp($event)"
+        (answerStateEmitter)="this.updateHintState($event)"
+        (helpStateEmitter)="this.updateHelpState($event)"
+        [content]="this.helpContent"
+        [requestingHelp]="requestingHelp"
+      ></app-help-box>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="main-container">
+  <div class="top-section"></div>
+  <div class="middle-section">
+    <div class="left-section">
+      <app-display-box
+        [fileType] = "'pdf'"
+        [relevantDocuments]="this.context"
+        (promptEmitter)="requestDocuments($event)"
+        ></app-display-box>
+    </div>
+    <div class="right-section">
+      <app-chat-box
+        [content]="this.content"
+        [incomingMessage]="this.newMessageIncoming"
+        [newMessages]="this.messages"
+      ></app-chat-box>
+    </div>
+  </div>
+  <div class="bottom-section">
+    <div class="input">
+      <app-input-bar (promptEmitter)="this.send($event)"></app-input-bar>
+    </div>
+    <div class="help-box">
+      <app-help-box
+        (messageEmitter)="this.requestHelp($event)"
+        [content]="this.helpContent"
+      ></app-help-box>
+
+    </div>
+  </div>
+</div>
+-->
+<!-- <app-animated-agent></app-animated-agent> -->
+
+
+
+<button (click)="removeLastMessage()">Remove Last Message</button>

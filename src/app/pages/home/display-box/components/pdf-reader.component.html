@@ -1,0 +1,50 @@
+<div class="options-container">
+  <input
+    type="text"
+    name="something"
+    [value]="prompt"
+    #input
+    [(ngModel)] = "this.prompt"
+    (change) = "this.search()"
+  >
+  <mat-icon
+    class="search-button"
+    type="button"
+    (click)="this.searchFiles()"
+  >search</mat-icon>
+</div>
+
+<mat-icon
+  class="previous-button"
+  type="button"
+  (click)="this.incrementPage()"
+>keyboard_arrow_left</mat-icon>
+
+<mat-icon
+  class="next-button"
+  type="button"
+  (click)="this.incrementPage()"
+>keyboard_arrow_right</mat-icon>
+
+<pdf-viewer
+    [src]="pdfSrc"
+    [page] = "pageNumber"
+    [render-text]="false"
+    [original-size]="true"
+    [show-all]="true"
+    [show-borders]="false"
+    [zoom]="1.35"
+    [zoom-scale]="'page-width'"
+    [fit-to-page]="true"
+    class="pdf-viewer"
+></pdf-viewer>
+<!-- <input (change)="onFileSelected()" type="file" id="file"> -->
+
+<!--
+<button
+  (click)="this.search()">
+  Search here
+</button>
+
+<div class="test">I'm here and i am doing something</div> -->
+

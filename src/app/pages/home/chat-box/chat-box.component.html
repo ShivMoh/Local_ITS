@@ -1,0 +1,9 @@
+<div class="outer-container">
+  <div class="chat-box">
+      <app-chat-message
+        class="message" *ngFor="let message of this.messageQueue"
+        [message]=message
+      ></app-chat-message>
+  </div>
+</div>
+

@@ -1,0 +1,1 @@
+load_dataset('json', data_files=path, split='train')
