@@ -3,7 +3,7 @@ A Local ITS, designed to work offline with hugging face models based on Ruffle&R
 
 ## Installation and setup
 #### Front end
-Ensure that nodejs and npm is installed: https://nodejs.org/en/download, then run
+Ensure that nodejs and npm is installed: https://nodejs.org/en/download, then run within root directory
 ```
 npm i
 ```
