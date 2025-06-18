@@ -57,5 +57,6 @@ At current executables cannot be exported. Pyinstaller encounters errors on comp
 
 ## References
 - Schmucker, R., Xia, M., Azaria, A., & Mitchell, T. (2024, July 2). Ruffle &Riley: Insights from Designing and Evaluating a Large Language Model-Based Conversational Tutoring System. Springer.com. https://doi.org/10.1007/978-3-031-64302-6_6
-- Github repo: https://github.com/rschmucker/ruffle-and-riley
+- Ruffle&Riley Github repo: https://github.com/rschmucker/ruffle-and-riley
+
 
