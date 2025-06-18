@@ -1,5 +1,5 @@
 ## Overview
-A Local ITS, designed to work offline with hugging face models, created as a requirement for conducting inference benchmarks for a final year research project titled "Local and Personalized Large Language Models in Intelligent Tutoring Systems" conducted at the University of Guyana towards the Bachelor's in Computer Science
+A Local ITS, designed to work offline with hugging face models based on Ruffle&Riley (Schmucker et al., 2024), created as a requirement for conducting inference benchmarks for a final year research project titled "Local and Personalized Large Language Models in Intelligent Tutoring Systems" conducted at the University of Guyana towards the Bachelor's in Computer Science
 
 ## Installation and setup
 #### Front end
@@ -51,4 +51,11 @@ Before running change hardcoded path in script_generation/helpers.py on line 66 
 ```
 python -m script_generation
 ```
+
+## Current Status 
+At current executables cannot be exported. Pyinstaller encounters errors on compiling pytorch. Do note that this and all afore mentioned instructions have only been tested on linux mint. 
+
+## References
+- Schmucker, R., Xia, M., Azaria, A., & Mitchell, T. (2024, July 2). Ruffle &Riley: Insights from Designing and Evaluating a Large Language Model-Based Conversational Tutoring System. Springer.com. https://doi.org/10.1007/978-3-031-64302-6_6
+- Github repo: https://github.com/rschmucker/ruffle-and-riley
 
