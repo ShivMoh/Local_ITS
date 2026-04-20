@@ -1,7 +1,27 @@
 ## Overview
 A Local ITS, designed to work offline with hugging face models based on Ruffle&Riley (Schmucker et al., 2024), created as a requirement for conducting inference benchmarks for a final year research project titled "Local and Personalized Large Language Models in Intelligent Tutoring Systems" conducted at the University of Guyana towards the Bachelor's in Computer Science
 
-## Installation and setup
+**DISCLAIMER**: This is strictly a proof of concept and not intended to be a production grade ITS. 
+
+## Setup
+
+Note that you'll need to supply reference material to `/server/storage/pdfs` for this system to work.
+
+In addition to that, you will need to run the script generation module with same reference material to generate a script for the tutor using `python -m script_generation`
+
+The generated script can then be placed into `ruffle.py`. 
+
+In `user_data/config.json`, please intialise with the following
+
+```
+{
+  "latest_date": "",
+  "iteration_counter": 0,
+  "update_list": []
+}
+```
+
+## Installation 
 #### Front end
 Ensure that nodejs and npm is installed: https://nodejs.org/en/download, then run within root directory
 ```
