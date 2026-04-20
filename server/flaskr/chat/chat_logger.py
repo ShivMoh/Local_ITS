@@ -3,7 +3,7 @@ from datetime import datetime
 import os
 import json
 
-directory = "./user_data"
+directory = "../log"
 prompt = ""
 chosen = ""
 rejected = ""
@@ -45,7 +45,7 @@ def load_state():
   iteration_counter = config["iteration_counter"]
   update_list = config["update_list"]
 
-  print("VARIABLES",  latest_date, iteration_counter, update_list)
+  # print("VARIABLES",  latest_date, iteration_counter, update_list)
      
   return [latest_date, iteration_counter, update_list]
 

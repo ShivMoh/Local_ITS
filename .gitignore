@@ -6,6 +6,7 @@
 /server/flaskr/chat/wandb
 /server/flaskr/chat/adapters/user
 /server/flaskr/storage/pdfs_bak
+/server/flaskr/storage/pdfs
 /server/instance
 /server/its_dev
 

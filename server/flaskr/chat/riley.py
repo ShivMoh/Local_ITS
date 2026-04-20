@@ -22,12 +22,6 @@ def prepare_revision_message(material: str, teacher_response: str):
 
     <</SYS>> [/INST]"""
 
-expected_answer = """
-  The operating system is a software that manages a computer’s hardware and provides a basis for application programs.
-  Its primary goals are to execute user programs and make solving user problems easier, make the computer system convenient
-  to use, and use the computer hardware in an efficient manner. Operating systems are found almost everywhere today, from cars
-  and home appliances (IoT), to smartphones and cloud computing environments.
-"""
 # this simply detects a misconception on the teachers behalf
 def prepare_misconception_message(student_question : str, teacher_answer : str):
   return f"""<s> [INST] <<SYS>>
@@ -51,35 +45,6 @@ def prepare_misconception_message(student_question : str, teacher_answer : str):
 
     <</SYS>> [/INST]"""
 
-
-# def prepare_misconception_message(student_question: str, teacher_answer: str) -> str:
-#   return f"""
-#     <s> [INST] <<SYS>>  
-#     You are a professor evaluating the accuracy of a teacher’s  
-
-#     ### **Evaluation Rules:**  
-#     1. **Ignore typos, grammar, or formatting issues**—these do not count as inaccuracies.    
-#     2. **Partially correct responses are acceptable**—an answer does not need to be 100% complete.  
-#     3. **Fully irrelevant or nonsensical answers are inaccurate**.  
-#     4. **Answers that do not answer the question are inaccurate
-#     5. **Answers that contradict known knowledge is very inaccurate
-
-#     ### **Task:**  
-#     Assess whether the teacher’s response contains factual inaccuracies **based on the provided material**.  
-
-#     **Student Question:**  
-#     {student_question}
-
-#     **Teacher Answer:**  
-#     {teacher_answer}
-
-#     Rate the accuracy of the teacher’s response on a scale of **1 to 10**, where **10 is fully accurate** and **1 is entirely incorrect**.  
-
-#     Respond in the following format:  
-
-#     Rating=
-#     <</SYS>> [/INST] </s>  
-#   """
 
 def prepare_misconception_message_orignal(student_question : str, teacher_answer : str):
   return f"""You are a professor evaluating whether a teacher's answer to a student's question contains factually incorrect information. Ignore typos, but count fully irrelevant responses as incorrect.
