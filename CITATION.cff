@@ -15,7 +15,7 @@ abstract: >
 year: 2026
 url: "https://github.com/ShivMoh/Local_ITS"
 repository-code: "https://github.com/ShivMoh/Local_ITS"
-version: 1.0.0
+version: 0.1
 license: GPL-3.0
 keywords:
   - intelligent tutoring system
