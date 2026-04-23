@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Mohamed
+    given-names: Shivesh
+    alias: ShivMoh
+title: "Local ITS"
+abstract: >
+  A local Intelligent Tutoring System designed to work offline with Hugging Face
+  models, based on Ruffle & Riley (Schmucker et al., 2024). Created as a proof of
+  concept for benchmarking local and personalized LLMs in ITS, as part of a final
+  year research project titled "Local and Personalized Large Language Models in
+  Intelligent Tutoring Systems" at the University of Guyana.
+year: 2026
+url: "https://github.com/ShivMoh/Local_ITS"
+repository-code: "https://github.com/ShivMoh/Local_ITS"
+version: 1.0.0
+license: GPL-3.0
+keywords:
+  - intelligent tutoring system
+  - large language models
+  - offline AI
+  - educational technology
